@@ -1,0 +1,113 @@
+.work {
+  background-color: #592c6b;
+  background-image: linear-gradient(to top, #542967 0%, #723c88 100%);
+  padding-bottom: 40px;
+
+  &__title {
+    padding: 39px 0 19px;
+    color: #ffffff;
+    font-family: 'Gilroy Regular';
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__descrip{
+    width: 290px;
+    height: 67px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgba(114, 60, 139, 0.56);
+  }
+  &__text {
+    text-align: center;
+    padding: 19px 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Gilroy Regular';
+
+    &-link {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 14px;
+      font-family: 'Gilroy Regular';
+    }
+  }
+  
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 120px;
+    height: 182px;
+    margin-bottom: 28px;
+  }
+  &__circle {
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.18);
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    width: 35px;
+  }
+
+  &__descrip {
+    color: #ffffff;
+    font-family: 'Gilroy Regular';
+    font-size: 14px;
+    text-align: center;
+  }
+ 
+}
+
+@media (min-width: 700px) {
+  .cart {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .work {
+    padding-bottom: 50px;
+    &__title {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    &__descrip {
+      width: 40%;
+      height: 80px;
+    }
+    &__text {
+      font-size: 20px;
+      &-link {
+        font-size: 20px;
+      }
+    }
+  }
+  .cart {
+    &__item {
+      padding: 0 50px;
+      width: 100%;
+      height: auto;
+    }
+    &__descrip {
+      font-size: 20px;
+    }
+  }
+}

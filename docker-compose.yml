@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  front:
+    build: .
+    image: front
+    command: npm start
+    container_name: frontendNode
+    ports:
+      - "80:3000"

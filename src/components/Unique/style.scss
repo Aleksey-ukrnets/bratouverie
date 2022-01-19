@@ -1,0 +1,266 @@
+.unique {
+  padding: 40px 15px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    text-align: center;
+    color: #2c4046;
+    font-family: 'Gilroy Regular';
+    font-size: 20px;
+    margin-bottom: 19px;
+  }
+  &__img {
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #2c4046;
+      margin-bottom: 15px;
+    }
+
+    &-title {
+      width: 190px;
+      color: #2c4046;
+      font-family: 'Gilroy Regular';
+      font-size: 18px;
+    }
+
+    &-circle {
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background-color: #ec1fc0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-family: 'Gilroy Regular';
+      font-size: 16px;
+    }
+    &-answer {
+      display: none;
+      height: auto;
+      justify-content: center;
+      
+          & img {
+            width: 50%;
+            object-fit: contain;
+            max-height: 740px;
+            padding: 20px 30px;
+          }
+    }
+  }
+}
+.unique__list-items:hover .unique__list-answer {
+  display: flex;
+}
+@media (max-width: 400px) {
+  .unique__list-answer img {
+    width: 99%;
+    height: auto;
+    max-width: 450px;
+  }
+}
+
+
+
+.unique-desktop {
+  display: none;
+  position: relative;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    padding: 50px 0 10px 0;
+    color: #364247;
+    font-family: 'Gilroy Regular';
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+  &__img {
+    width: 380px;
+  }
+
+  &__block {
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+}
+
+.dot {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #cb24bb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s linear;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #cb24bb;
+    opacity: 0.2;
+  }
+
+  &:hover {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__qr {
+    left: 13%;
+    top: 13px;
+
+    &:hover > .title-unique {
+      color: #cb24bb;
+    }
+    &:hover > &-img {
+      display: block;
+    }
+  }
+
+  &__owner {
+    left: 8%;
+    top: 90px;
+    &:hover > .title-unique {
+      color: #cb24bb;
+    }
+    &:hover > &-img {
+      display: block;
+    }
+  }
+
+  &__dress {
+    left: 0;
+    top: 210px;
+    &:hover > .title-unique {
+      color: #cb24bb;
+    }
+    &:hover > &-img {
+      display: block;
+    }
+  }
+
+  &__domane {
+    left: 4%;
+    top: 295px;
+    &:hover > .title-unique {
+      color: #cb24bb;
+    }
+    &:hover > &-img {
+      display: block;
+    }
+  }
+
+  &__name {
+    left: 85%;
+    top: 13px;
+    &:hover > .title-unique {
+      color: #cb24bb;
+    }
+    &:hover > &-img {
+      display: block;
+    }
+  }
+  &__number {
+    right: 15px;
+    top: 120px;
+    &:hover > .title-unique {
+      color: #cb24bb;
+    }
+    &:hover > &-img {
+      display: block;
+    }
+  }
+  &__coincided {
+    right: 15px;
+    top: 280px;
+    &:hover > .title-unique {
+      color: #cb24bb;
+    }
+    &:hover > &-img {
+      display: block;
+    }
+  }
+}
+
+.title-unique {
+  position: inherit;
+  color: #364247;
+  font-family: 'Gilroy Regular';
+  font-size: 22px;
+
+  &__qr {
+    left: -150px;
+    top: 0;
+  }
+  &__owner {
+    left: -230px;
+    top: 5px;
+  }
+
+  &__dress {
+    left: -220px;
+    top: 10px;
+  }
+
+  &__domane {
+    left: -250px;
+    top: 15px;
+  }
+
+  &__name {
+    right: -200px;
+    top: 0;
+  }
+  &__number {
+    right: -230px;
+    top: 0;
+  }
+  &__coincided {
+    right: -300px;
+    top: 0;
+  }
+}
+
+.img {
+  width: 20vw;
+  height: auto;
+  display: none;
+  position: inherit;
+  left: 20px;
+  top: 20px;
+  z-index: 1500;
+}
+
+
+@media screen and (min-width: 800px) {
+  .unique {
+    display: none;
+  }
+  .unique-desktop {
+    display: block;
+  }
+}

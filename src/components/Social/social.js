@@ -1,0 +1,13 @@
+import './style.scss';
+
+const Social = () => {
+  return (
+    <>
+      <section className="social">
+        <div className="social__wrapper socializer a sr-40px sr-circle sr-float sr-icon-dark sr-bg-white sr-pad"><span className="sr-youtube"><a href="https://youtube.com/" target="_blank" title="Youtube"><i className="fab fa-youtube"></i></a></span><span className="sr-vkontakte"><a href="https://vk.com/share.php?url=http%3A%2F%2Fbratouverie.com%2F&amp;title=%D0%92ratouverie&amp;description=" target="_blank" title="VKontakte"><i className="fab fa-vk"></i></a></span><span className="sr-facebook"><a href="https://www.facebook.com/share.php?u=http%3A%2F%2Fbratouverie.com%2F&amp;t=%D0%92ratouverie" target="_blank" title="Facebook"><i className="fab fa-facebook-f"></i></a></span><span className="sr-twitter"><a href="https://twitter.com/intent/tweet?text=%D0%92ratouverie%20-%20http%3A%2F%2Fbratouverie.com%2F%20" target="_blank" title="Twitter"><i className="fab fa-twitter"></i></a></span><span className="sr-instagram"><a href="https://instagram.com" target="_blank" title="Instagram"><i className="fab fa-instagram"></i></a></span><span className="sr-reddit"><a href="https://reddit.com/submit?url=http%3A%2F%2Fbratouverie.com%2F&amp;title=%D0%92ratouverie" target="_blank" title="Reddit"><i className="fab fa-reddit"></i></a></span><span className="sr-linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fbratouverie.com%2F&amp;title=%D0%92ratouverie&amp;summary=" target="_blank" title="LinkedIn"><i className="fab fa-linkedin"></i></a></span><span className="sr-tiktok"><a href="https://www.tiktok.com/" target="_blank" title="TikTok"><i className="fab fa-tiktok"></i></a></span><span className="sr-odnoklassniki"><a href="https://connect.ok.ru/dk?st.cmd=OAuth2Login&amp;st.layout=w&amp;st.redirect=%252Fdk%253Fcmd%253DWidgetSharePreview%2526amp%253Bst.cmd%253DWidgetSharePreview%2526amp%253Bst.shareUrl%253Dhttp%3A%2F%2Fbratouverie.com%2F&amp;st._wt=1&amp;st.client_id=-1" target="_blank" title="Odnoklassniki"><i className="fab fa-odnoklassniki"></i></a></span><span className="sr-telegram"><a href="https://telegram.me/share/url?url=http%3A%2F%2Fbratouverie.com%2F&amp;text=%D0%92ratouverie" target="_blank" title="Telegram"><i className="fab fa-telegram-plane"></i></a></span><span className="sr-whatsapp"><a href="https://api.whatsapp.com/send?text=%D0%92ratouverie%20http%3A%2F%2Fbratouverie.com%2F" target="_blank" title="WhatsApp"><i className="fab fa-whatsapp"></i></a></span></div>
+      </section>
+    </>
+  )
+}
+
+export default Social

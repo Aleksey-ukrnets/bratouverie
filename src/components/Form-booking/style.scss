@@ -1,0 +1,93 @@
+.qr {
+  &__main {
+    color: #131313;
+    font-family: 'Gilroy-bold';
+    font-size: 20px;
+    margin: 0 0 19px 15px;
+  }
+  &__title {
+    color: #1a1a1a;
+    font-family: 'Gilroy Regular';
+    font-size: 16px;
+    margin: 0px 0px 19px 15px;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto 30px;
+  }
+  &__subtitle {
+    text-align: center;
+    color: #131313;
+    font-family: 'Gilroy Regular';
+    font-size: 21px;
+    margin-bottom: 19px;
+  }
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 29px;
+  }
+  &__text {
+    margin: 0 16px 28px 16px;
+    color: #1a1a1a;
+    font-family: 'Gilroy Regular';
+    font-size: 14px;
+    text-align: justify;
+  }
+  &__sum {
+    text-align: center;
+    color: #131313;
+    font-family: 'Gilroy Regular';
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  &__payment {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Gilroy-bold';
+    font-size: 16px;
+    padding: 20px 84px;
+    border-radius: 28px;
+    background-color: #ec1fc0;
+  }
+}
+
+.form__text {
+  margin: 20px 0;
+  color: #131313;
+  font-family: 'Gilroy Regular';
+  font-size: 16px;
+}
+
+.step__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.step {
+  margin: 0 7px;
+  width: 46px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e6e6e6;
+
+  &.active {
+    background-color: #542967;
+  }
+}
+
+.widget-small__button.button_size_s.button_view-type_widget {
+  border-radius: 28px;
+  background-color: "#ec1fc0";
+  width: 260px;
+  height: 55px;
+  color: #ffff;
+  font-family: 'Gilroy Regular';
+  font-size: 16px;
+  margin-bottom: 30px;
+}

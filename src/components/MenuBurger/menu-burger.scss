@@ -1,0 +1,144 @@
+.burger-btn {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  & span {
+    position: absolute;
+    top: 7px;
+    background-color: #ec1fc0;
+    border-radius: 2px;
+    height: 3px;
+    width: 22px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: #ec1fc0;
+    border-radius: 2px;
+    height: 3px;
+    width: 22px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    background-color: #ec1fc0;
+    border-radius: 2px;
+    height: 3px;
+    width: 22px;
+  }
+}
+
+.menu__burger {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  z-index: 2000;
+
+  &-content {
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background-color: #191d22;;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  &-close {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    color: #ffff;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  &-wrapper {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-logo {
+    padding: 28px 0 0;
+    margin-bottom: 34px;
+  }
+
+  &-text {
+    color: #ffffff;
+    font-family: 'Gilroy-bold';
+    font-size: 20px;
+    margin-bottom: 14px; 
+    text-decoration: none; 
+  }
+
+  &-link {
+    color: #ec1fc0;
+    font-family: 'Gilroy Regular';
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 24px;
+  }
+
+  &-btn {
+    display: none;
+    border: none;
+    width: 135px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #ec1fc0;
+    margin-right: 10px;
+    color: #ffffff;
+    font-family: 'Gilroy Regular';
+    font-size: 13px;
+    margin-bottom: 25px;
+
+    &:last-child {
+      width: 104px;
+      height: 36px; 
+    }
+
+    &:hover{
+      border: 1px solid #ec1fc0;
+      background-color: transparent;
+    }
+  }
+
+  &-img {
+    margin-right: 30px;
+  }
+}
+
+.menu__burger.active {
+  transform: translateX(0);
+}
+
+
+.blur {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(25, 29, 34, 0.7);
+  position: absolute; 
+}
+
+@media screen and (max-width: 768px){
+  .menu__burger{
+     &-content {
+        width: 90%;
+     }
+  }
+}

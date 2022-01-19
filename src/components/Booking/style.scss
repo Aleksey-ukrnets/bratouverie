@@ -1,0 +1,109 @@
+.booking {
+  background-color: #592c6b;
+  background-image: linear-gradient(to top, #542967 0%, #723c88 100%);
+  padding: 40px 25px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__main {
+    &-title {
+      color: #ffffff;
+      font-family: 'Gilroy Black';
+      font-size: 24px;
+      font-weight: 400;
+    }
+    &-subtitle {
+      opacity: 0.2;
+      color: #ec1fc0;
+      font-family: 'Gilroy-bold';
+      font-size: 37px;
+      font-weight: 700;
+      margin-top: -5px;
+    }
+
+    &-text {
+      color: #ffffff;
+      font-family: 'Gilroy Regular';
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px;
+      margin-bottom: 24px;
+    }
+  }
+  &__right {
+    &-number {
+      text-shadow: 0 31px 35px rgba(18, 3, 30, 0.39);
+      color: #ec1fc0;
+      font-family: 'Gilroy Black';
+      font-size: 124px;
+      font-weight: 400;
+      line-height: 105.77px;
+      margin-bottom: 33px;
+    }
+
+    &-text {
+      color: #ffffff;
+      font-family: 'Gilroy Regular';
+      font-size: 18px;
+      margin-bottom: 9px;
+    }
+    &-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 290px;
+      height: 55px;
+      border-radius: 28px;
+      background-color: #ffffff;
+      color: #5169a4;
+      font-family: "Gilroy Black";
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .booking {
+    &__main{ 
+      &-title {
+        font-size: 30px;
+      }
+      &-text {
+        font-size: 18px;
+      }
+    }
+    &__right {
+      &-number {
+        font-size: 130px;
+      }
+      &-date {
+        font-size: 20px;
+      }
+      &-text {
+        font-size: 19px;
+        margin-bottom: 20px;
+      }
+      &-num {
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+    }
+    &-btn {
+      font-size: 20px;
+    }
+  }
+}
